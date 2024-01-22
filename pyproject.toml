@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "custom-propainter"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+av = "^11.0.0"
+addict = "^2.4.0"
+einops = "^0.7.0"
+future = "^0.18.3"
+numpy = "^1.26.3"
+scipy = "^1.12.0"
+opencv-python = "^4.9.0.80"
+matplotlib = "^3.8.2"
+scikit-image = "^0.22.0"
+torch = { version = "^2.1.2", source="pytorch-gpu-src"}
+torchvision = { version = "^0.16.2", source="pytorch-gpu-src"}
+imageio-ffmpeg = "^0.4.9"
+pyyaml = "^6.0.1"
+requests = "^2.31.0"
+timm = "^0.9.12"
+yapf = "^0.40.2"
+
+[[tool.poetry.source]]
+name = "pytorch-gpu-src"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
