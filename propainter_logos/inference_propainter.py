@@ -11,12 +11,12 @@ from tqdm import tqdm
 import torch
 import torchvision
 
-from model.modules.flow_comp_raft import RAFT_bi
-from model.recurrent_flow_completion import RecurrentFlowCompleteNet
-from model.propainter import InpaintGenerator
+from propainter_logos.model.modules.flow_comp_raft import RAFT_bi
+from propainter_logos.model.recurrent_flow_completion import RecurrentFlowCompleteNet
+from propainter_logos.model.propainter import InpaintGenerator
 from utils.download_util import load_file_from_url
 from core.utils import to_tensors
-from model.misc import get_device
+from propainter_logos.model.misc import get_device
 
 import warnings
 warnings.filterwarnings("ignore")

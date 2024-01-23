@@ -12,9 +12,9 @@ import torch.nn.functional as F
 import torch
 from torch.utils.data import DataLoader
 
-from model.modules.flow_comp_raft import RAFT_bi
-from model.recurrent_flow_completion import RecurrentFlowCompleteNet
-from model.propainter import InpaintGenerator
+from propainter_logos.model.modules.flow_comp_raft import RAFT_bi
+from propainter_logos.model.recurrent_flow_completion import RecurrentFlowCompleteNet
+from propainter_logos.model.propainter import InpaintGenerator
 
 # from core.dataset import TestDataset
 from core.dataset import TestDataset

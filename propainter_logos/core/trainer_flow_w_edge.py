@@ -16,10 +16,10 @@ from torch.utils.tensorboard import SummaryWriter
 from core.lr_scheduler import MultiStepRestartLR, CosineAnnealingRestartLR
 from core.dataset import TrainDataset
 
-from model.modules.flow_comp_raft import RAFT_bi, FlowLoss, EdgeLoss
+from propainter_logos.model.modules.flow_comp_raft import RAFT_bi, FlowLoss, EdgeLoss
 
 # from skimage.feature import canny
-from model.canny.canny_filter import Canny
+from propainter_logos.model.canny.canny_filter import Canny
 from RAFT.utils.flow_viz_pt import flow_to_image
 
 

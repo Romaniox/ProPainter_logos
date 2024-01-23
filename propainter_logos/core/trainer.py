@@ -17,8 +17,8 @@ from core.lr_scheduler import MultiStepRestartLR, CosineAnnealingRestartLR
 from core.loss import AdversarialLoss, PerceptualLoss, LPIPSLoss
 from core.dataset import TrainDataset
 
-from model.modules.flow_comp_raft import RAFT_bi, FlowLoss, EdgeLoss
-from model.recurrent_flow_completion import RecurrentFlowCompleteNet
+from propainter_logos.model.modules.flow_comp_raft import RAFT_bi, FlowLoss, EdgeLoss
+from propainter_logos.model.recurrent_flow_completion import RecurrentFlowCompleteNet
 
 from RAFT.utils.flow_viz_pt import flow_to_image
 
