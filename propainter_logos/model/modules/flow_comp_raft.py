@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from RAFT import RAFT
+from propainter_logos.RAFT import RAFT
 from propainter_logos.model.modules.flow_loss_utils import flow_warp, ternary_loss2
 
 
